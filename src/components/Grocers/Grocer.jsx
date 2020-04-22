@@ -24,6 +24,7 @@ const Grocer = ({ grocer }) => {
   const { id, name, price, description, image } = grocer
 
   let mainImage = image ? image.fixed : img
+  console.log('YYYYY', mainImage.src)
 
   return (
     <article className={styles.grocer}>

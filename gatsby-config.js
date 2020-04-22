@@ -28,8 +28,8 @@ module.exports = {
     // {
     //   resolve: 'gatsby-source-filesystem',
     //   options: {
-    //     name: `data`,
-    //     path: './data/',
+    //     name: `src`,
+    //     path: './src/',
     //   },
     // },
     {

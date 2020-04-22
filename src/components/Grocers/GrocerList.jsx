@@ -4,23 +4,19 @@ import Grocer from './Grocer'
 import Title from '../Title'
 
 const GrocerList = props => {
-  const [state, setState] = useState({
-    grocers: [],
-    sortedGrocers: [],
-  })
+  const [grocers, setGrocers] = useState([])
+  const [sortedGrocers, setSortedGrocers] = useState([])
 
   useEffect(() => {
-    setState({
-      grocers: props.grocers.edges,
-      sortedGrocers: props.grocers.edges,
-    })
+    setGrocers(props.grocers.edges)
+    setSortedGrocers(props.grocers.edges)
   }, [])
 
   return (
     <section className={styles.tours}>
       <Title title="our" subtitle="grocers" />
       <div className={styles.center}>
-        {state.sortedGrocers.map(({ node }) => {
+        {sortedGrocers.map(({ node }) => {
           return <Grocer key={node.id} grocer={node} />
         })}
       </div>
