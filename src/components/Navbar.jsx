@@ -5,6 +5,7 @@ import { FaAlignRight, FaCartArrowDown } from 'react-icons/fa'
 import links from '../constants/links'
 import socialIcons from '../constants/social-icons'
 import logo from '../images/logo.svg'
+import Snipcart from './Snipcart'
 
 const Navbar = () => {
   const [isOpen, setNav] = useState(false)
@@ -23,9 +24,7 @@ const Navbar = () => {
           </AniLink>
 
           <button type="button" className={styles.logoBtn} onClick={toggleNav}>
-            <FaCartArrowDown
-              className={`${styles.cartIcon} snipcart-checkout`}
-            />
+            <Snipcart />
             <FaAlignRight className={styles.logoIcon} />
           </button>
         </div>
@@ -49,7 +48,7 @@ const Navbar = () => {
 
         {/* external links use a tag */}
         <div className={styles.navSocialLinks}>
-          <FaCartArrowDown className={`${styles.cartIcon} snipcart-checkout`} />
+          <Snipcart />
           {socialIcons.map((item, index) => (
             <a
               key={index}

@@ -4,12 +4,18 @@ import StyledHero from '../components/StyledHero'
 import { graphql } from 'gatsby'
 import Grocers from '../components/Grocers/Grocers'
 import SEO from '../components/SEO'
+import Banner from '../components/Banner'
 
 const GrocersPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Grocer" />
-      <StyledHero img={data.defaultBcg.childImageSharp.fluid} />
+      <StyledHero img={data.defaultBcg.childImageSharp.fluid}>
+        <h4 style={{ color: 'white' }}>
+          sadfsadfsaf shopping online is font...
+        </h4>
+      </StyledHero>
+
       <Grocers />
     </Layout>
   )

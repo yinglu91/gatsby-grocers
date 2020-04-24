@@ -51,7 +51,7 @@ const Tour = ({ tour }) => {
         {/* https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css */}
         <button
           className="btn-primary snipcart-add-item"
-          style={{ padding: '0.7rem 1.0rem' }}
+          style={{ fontSize: '0.8rem', padding: '0.2rem 0.3rem' }}
           data-item-id={slug}
           data-item-name={name}
           data-item-price={price}

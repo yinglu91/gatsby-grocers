@@ -25,8 +25,8 @@ const Index = ({ data }) => {
       </StyledHero>
 
       <About />
-      <Services />
-      <FeaturedTours />
+      {/* <Services />
+      <FeaturedTours /> */}
     </Layout>
   )
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import styles from '../../css/items.module.css'
+import styles from '../../css/items1.module.css'
 import Grocer from './Grocer'
 import Title from '../Title'
 import { FaSearch } from 'react-icons/fa'
@@ -40,20 +40,20 @@ const GrocerList = props => {
   }
   return (
     <section className={styles.tours}>
-      <Title title="our123" subtitle="grocers" />
+      <Title title="our" subtitle="grocers" />
       {/* cateory */}
 
-      <div className={styles.center}>
+      <div className={styles.center1}>
         {categories.map(item => (
           <button
             className="btn-primary"
-            style={{ width: 170 }}
+            style={{ width: 160, background: 'green' }}
             onClick={() => handleItem(item)}
           >
             {item}
           </button>
         ))}
-        <FaSearch className={styles.icon} />
+        {/* <FaSearch className={styles.icon} /> */}
       </div>
 
       <div className={styles.center}>

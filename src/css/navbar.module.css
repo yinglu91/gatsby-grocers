@@ -5,15 +5,6 @@
   padding: 1rem 1.25rem;
 }
 
-.cart-icon {
-  color: var(--primaryColor);
-  font-size: 2.5rem;
-  padding-right: 0.7rem;
-}
-.cart-icon:hover {
-  cursor: pointer;
-}
-
 .logo-btn {
   background: transparent;
   border: none;
